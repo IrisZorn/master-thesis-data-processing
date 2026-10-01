@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Node
+node_modules/
+/package.json
+/package-lock.json
+
+# IDE / tools
+.idea/
+.claude/
+.junie/
+
+# Data, models and outputs (large)
+/resources/
+tmp_frames/
+RAFT/models/*.pth
+*.pth
+*.pt
+
+# YOLO run outputs and videos
+runs/
+*.avi
+*.mp4
+*.mov
+*.mkv
+
+# Dataset is hosted on Roboflow (see README); keep only the config
+src/training/training_set/*
+!src/training/training_set/data.yaml
+
+# Local LiteLLM proxy config (endpoint, keys)
+/config.yaml
+
+# Tracking data / temp results
+*.pkl
+*.cache
+
+# Exception: the three trained models used by the code (whole run folders)
+!/resources/
+/resources/*
+!/resources/trained_models/
+/resources/trained_models/*
+!/resources/trained_models/yolov8s_forest_folliesv142/
+!/resources/trained_models/yolov8s_forest_folliesv142/**
+!/resources/trained_models/yolov8s_wally_warblesv8/
+!/resources/trained_models/yolov8s_wally_warblesv8/**
+!/resources/trained_models/yolov8n_forest_folliesv132/
+!/resources/trained_models/yolov8n_forest_folliesv132/**
+
+# Exception: generated maps
+!/resources/custom_test_img/
+/resources/custom_test_img/*
+!/resources/custom_test_img/forest_follies/
+/resources/custom_test_img/forest_follies/*
+!/resources/custom_test_img/forest_follies/maps/
+!/resources/custom_test_img/forest_follies/maps/**

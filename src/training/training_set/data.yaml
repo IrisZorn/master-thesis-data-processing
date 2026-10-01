@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 23
+names: ['apple', 'cuphead', 'cuphead_ghost', 'egg', 'eggshell', 'fish', 'heart', 'heart_bullet', 'injured_wally', 'mugman', 'mugman_ghost', 'nailbird', 'pill', 'pill_half', 'player_bullet', 'shoe', 'start', 'wally', 'wally_bullet', 'wally_feather', 'willy', 'willy_bullet', 'willy_egg']
+
+roboflow:
+  workspace: completecuphead
+  project: wally_warbles
+  version: 8
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/completecuphead/wally_warbles/dataset/8
